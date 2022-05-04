@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- google fonts icon link -->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/styles/result.css" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <div class="header">
+      <div class="header__left">
+        <i id="menu" class="material-icons">menu</i>
+        <a href="./index.html"><img src="utube.png" alt="" /></a>
+      </div>
+      <div class="header__search">
+        <div>
+          <input type="text" placeholder="Search" id="search_results" />
+          <button onclick="searchVideos()">
+            <i class="material-icons">search</i>
+          </button>
+        </div>
+      </div>
+      <div id="voice">
+        <i class="material-icons display-this">keyboard_voice</i>
+      </div>
+      <div class="header__icons">
+        <i class="material-icons display-this">search</i>
+        <i class="material-icons">videocam</i>
+        <i class="material-icons">apps</i>
+        <i class="material-icons">notifications</i>
+        <i class="material-icons display-this">account_circle</i>
+      </div>
+    </div>
+    <!-- header end -->
+
+    <!-- main start -->
+    <div class="result-container">
+      <div class="row">
+        <div class="play-video">
+          <div class="containerDiv"></div>
+          <hr />
+          <div class="tag"></div>
+        </div>
+
+        <div class="right-side-bar"></div>
+      </div>
+    </div>
+  </body>
+</html>
+<script src="/scripts/result.js"></script>

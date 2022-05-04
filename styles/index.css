@@ -1,0 +1,146 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: black;
+}
+
+/* header */
+
+.material-icons {
+  color: white;
+}
+
+.header {
+    background-color: #313131;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 70px;
+  padding: 15px;
+}
+
+.header__left {
+  display: flex;
+  align-items: center;
+}
+
+.header__left img {
+  width: 100px;
+  margin-left: 15px;
+}
+.header i {
+  padding: 0 7px;
+  cursor: pointer;
+}
+.header__search {
+  border: 1px solid gray;
+}
+.header__search div {
+  display: flex;
+}
+.header__search input {
+  width: 500px;
+  padding: 10px;
+  margin: 0;
+  border-radius: 0;
+  border: none;
+  height: 100%;
+  background-color: #202020;
+  outline: none;
+  color: white;
+  font-size: larger;
+}
+.header__search button {
+  border: none;
+  width: 70px;
+  background-color: #313131;
+}
+
+.mainBody {
+  height: calc(100vh - 70px);
+  display: flex;
+  overflow: hidden;
+  /* justify-content: space-between; */
+}
+
+/* side navbar start here */
+
+.sidebar {
+  height: 100%;
+  width: 200px;
+  background-color: #313131;
+  color: white;
+  overflow-y: scroll;
+  font-size: 12px;
+  
+}
+
+.sidebarDiv1 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 12px;
+  margin-top: 12px;
+  line-height: 10px;
+}
+.sidebarDiv2 {
+  display: flex;
+  align-items: center;
+  padding: 12px 25px;
+}
+.sidebarDiv2 span {
+  margin-left: 15px;
+}
+
+.sidebarDiv2:hover {
+  background: gray;
+  cursor: pointer;
+}
+
+.sidebar::-webkit-scrollbar {
+  display: none;
+}
+#card{
+  margin-top: 1%;
+  line-height: 20px;
+  width: 90%;
+}
+#voice{
+   margin-left:-13%;
+}
+hr {
+    height: 1px;
+    background-color: #e5e5e5;
+    border: none;
+  }
+  
+  .videos {
+    background-color: #202020;
+    width: 80%;
+    height: 100%;
+    padding: 10px 0px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    margin-left: 2%;
+  }
+  
+  
+  .videoDiv{
+
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    /* margin-left: 10px; */
+    gap: 10px;
+  }
+  
+  .videos::-webkit-scrollbar {
+    display: none;
+  }
+
